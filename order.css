@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color:  #ed7c03;
+    /*background: #ffffff url("bg.webp") no-repeat top center;*/
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a.active {
+    color: tomato;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color:  tomato;
+}
+
+main {
+    padding: 20px 0;
+}
+
+section {
+    margin: 40px 0;
+}
+
+#about img {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 2em;
+    color: #333;
+}
+
+ul {
+    margin: 20px 0;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color:  tomato;
+}
+
+/* Адаптивные стили */
+@media (max-width: 800px) {
+    #about img {
+        width: 500px;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav a {
+        font-size: 16px; /* Увеличение шрифта */
+    }
+
+    h1, h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav a {
+        font-size: 20px; /* Увеличение шрифта на 4px */
+    }
+
+    .td {
+        font-size: 14px; /* Уменьшение шрифта */
+    }
+
+    #about img {
+        width: 100%; /* Ширина изображения 100% */
+    }
+}
+
+@media (max-width: 400px) {
+    .td {
+        font-size: 12px; /* Уменьшение шрифта */
+    }
+}
